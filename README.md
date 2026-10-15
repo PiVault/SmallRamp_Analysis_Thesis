@@ -20,17 +20,19 @@ The aim is to make the analysis understandable and allow the thesis figures to b
 ## Project structure
 
 ```text
-SmallRamp_Analysis/
+SmallRamp_Analysis_Thesis/
 ├── README.md
-├── notebooks/              # Quality assessment and thesis analyses
+├── .gitignore
+├── Thesis/
+│   └── Thesis_KevinRahy.pdf
+├── notebooks/
 ├── src/
-│   └── config.py           # Shared project-relative paths
+│   ├── __init__.py
+│   └── config.py
 ├── data/
-│   ├── metadata.xlsx       # Recording and participant metadata
-│   └── raw/                # Raw recordings supplied separately
-├── results/                # Locally generated figures and tables
-├── pyproject.toml          # Project dependencies
-└── poetry.lock             # Resolved dependency versions
+│   └── metadata.xlsx
+├── pyproject.toml
+└── poetry.lock
 ```
 
 The GitHub version will include reviewed metadata but exclude raw data and `results/`; notebooks may retain saved figures. Raw data is available upon request.
@@ -66,7 +68,10 @@ The full analysis needs the raw experimental recordings as well as `data/metadat
 
 Raw data is available upon request. To reproduce the results, use the same data, then run all cells in each analysis notebook from a fresh kernel. Figures and tables are saved in `results/paper_figures/` and `results/tables/`.
 
+## Thesis
+
+[Master's thesis (PDF)](Thesis/Thesis_KevinRahy.pdf)
 
 ## Acknowledgements
 
-I would like to thank [LAsslaender](https://github.com/LAsslaender) for contributing to this project and providing the BalancePy repository used for the analysis. This thesis analysis builds on their contributions and the tools provided by [BalancePy](https://github.com/PostureControlLab/balancepy).
+I would like to thank my supervisor [LAsslaender](https://github.com/LAsslaender) for his guidance and support throughout this work, and for providing the [BalancePy](https://github.com/PostureControlLab/balancepy) repository used for the analysis.
