@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "smallramp-analysis"
+version = "0.1.0"
+description = "SmallRamp analysis project using balancepy"
+authors = ["hprc-pcl <hprc-pcl@uni-konstanz.de>"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.12,<3.13"
+numpy = "^2.0"
+pandas = "^3.0"
+scipy = "^1.0"
+plotly = "^6.0"
+pyarrow = ">=18.0"
+jupyter = "^1.0"
+ipykernel = "^7.0"
+ipywidgets = "^8.0"
+balancepy = {path = "../../balancepy-dev/balancepy", develop = true}
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^7.0"
+pytest-cov = "^7.0"
+black = "^24.0"
+flake8 = "^7.0"
+mypy = "^1.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

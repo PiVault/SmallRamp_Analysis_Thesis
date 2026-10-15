@@ -1,0 +1,31 @@
+# Data: include metadata only
+data/*
+!data/metadata.xlsx
+
+# Generated results
+results/
+
+# DVC
+.dvc/
+*.dvc
+.dvcignore
+DVC_FILE_PATTERNS.md
+
+# Python environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+
+# Notebook checkpoints
+.ipynb_checkpoints/
+
+# Local settings and temporary files
+.vscode/
+.idea/
+.Rhistory
+.DS_Store
+.env
+.env.*
+*~
